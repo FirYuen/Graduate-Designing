@@ -1,0 +1,14 @@
+{
+  "name": "TREE",
+  "description": "",
+  "version": "1.0.0",
+  "main": "main.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+      "express": "latest",
+      "socket.io":"latest",
+      "fs":"latest"
+  }
+}

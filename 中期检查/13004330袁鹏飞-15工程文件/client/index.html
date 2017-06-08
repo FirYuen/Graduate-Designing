@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Smart</title>
+    <link href="client/css/mycss.css" rel="stylesheet">
+    <link href="client/mdl/material.min.css" rel="stylesheet">
+    <link href="client/css/date-time-picker.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+        mdl-layout--fixed-tabs">
+            <main class="mdl-layout__content">
+                <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+                    <div class="mdl-grid mdl-grid--no-spacing">
+                        <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                            <img class="banner" src="1.jpg" alt="" />
+                            <div class="banner-title">
+                                <h2 class="banner-title-h2">专注模式</h2>
+                                <div class="banner-title-cut-line">
+                                </div>
+                                <h5 class="banner-title-h5">
+                                    前所未有的高效，就此拥有
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                       <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                            <div class="tomato-card mdl-card">
+                                <div class="mdl-card__title fengrossment">
+                                    <h2 class="mdl-card__title-text timing-content-title">25分钟</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <div class="tomato-card-instruction">
+                                        点击开始计时进入工作时间，请保持专注，灯光将会提示您工作时间的结束。
+                                    </div>
+                                    <div class="mdl-progress mdl-js-progress tomato-card-progress"></div>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect timing">开始计时</a>
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect giveup">放弃时段</a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="tomato-card mdl-card rank-card">
+                                <div class="mdl-card__title">
+                                    <p>本周排名</p>
+                                    <h2 class="mdl-card__title-text">第 4 名</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <div class="Tree-usage-log-zone">
+                                        <div class='rank-usage-log-slice'>
+                                            <div class="Tree-usage-log-icon-box">
+                                                <samp class="Tree-usage-log-icon"></samp>
+                                            </div>
+                                            <samp class='Tree-usage-log'>第 1 名<br/>袁鹏飞 —— 完成36个专注时段</samp>
+                                        </div>
+                                        <div class='rank-usage-log-slice'>
+                                            <div class="Tree-usage-log-icon-box">
+                                                <samp class="Tree-usage-log-icon"></samp>
+                                            </div>
+                                            <samp class='Tree-usage-log'>第 2 名<br/>杨思 —— 完成33个专注时段</samp>
+                                        </div>
+                                        <div class='rank-usage-log-slice'>
+                                            <div class="Tree-usage-log-icon-box">
+                                                <samp class="Tree-usage-log-icon"></samp>
+                                            </div>
+                                            <samp class='Tree-usage-log'>第 3 名<br/>敖特 —— 完成27个专注时段</samp>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mdl-card__menu">
+                                    <button id="share-menu-1" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <img src="svg/ic_share_24px.svg">
+                                </button>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">展开更多</a>
+                                </div>
+                                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="share-menu-1">
+                                    <li class="mdl-menu__item">
+                                        分享到QQ空间
+                                    </li>
+                                    <li class="mdl-menu__item">
+                                        分享至QQ好友
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+               <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+                    <div class="mdl-grid mdl-grid--no-spacing">
+                        <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                            <img class="banner" src="5.jpg" alt="" />
+                            <div class="banner-title">
+                                <h2 class="banner-title-h2">TAB</h2>
+                                <div class="banner-title-cut-line">
+                                </div>
+                                <h5 class="banner-title-h5">
+                                   TEXT
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop alarm-zone" id="alarm-zone">
+                            <div class="alarm-card mdl-card" id="alarm-card">
+                                <div class="mdl-card__title nature">
+                                    <h2 class="mdl-card__title-text timing-content-title">Card1</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <div class="alarm-card-instruction">
+                                      TEXT
+                                    </div>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Option1</a>
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Option2</a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="alarm-card mdl-card">
+                                <div class="mdl-card__title routine">
+                                    <h2 class="mdl-card__title-text timing-content-title">Card2</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <div class="alarm-card-instruction">
+                                        TEXT
+                                    </div>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Option1</a>
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Option2</a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="alarm-card mdl-card add-alarm-control-panel">
+                                <div class="mdl-card__title">
+                                    <h2 class="mdl-card__title-text timing-content-title">添加闹钟</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <div class="alarm-card-instruction">
+                                        <ul class="demo-list-control mdl-list">
+                                            <li class="mdl-list__item">
+                                                <span class="mdl-list__item-primary-content">自然唤醒</span>
+                                                <span class="mdl-list__item-secondary-action">
+                                            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="natural-wake-up-switch">
+                                                <input type="checkbox" id="natural-wake-up-switch" class="mdl-switch__input" checked />
+                                                </label>
+                                         </span>
+                                            </li>
+                                            <li class="mdl-list__item">
+                                                <span class="mdl-list__item-primary-content">标签</span>
+                                                <span class="mdl-list__item-secondary-action mdl-card-list">
+                                            <form action="#">
+                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                    <input class="mdl-textfield__input" type="text" id="alarm-note">
+                                                    <label class="mdl-textfield__label" for="sample3">标签</label>
+                                                    </div>
+                                                    </form>
+                                         </span>
+                                            </li>
+                                            <li class="mdl-list__item">
+                                                <span class="mdl-list__item-primary-content">时间</span>
+                                                <span class="mdl-list__item-secondary-action mdl-card-list">
+                                          <button id="showTime" class="mdl-button mdl-js-button mdl-button--primary">/ / : / /</button>
+                                        </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="confirm-add-alarm" href="#fixed-tab-2">确认添加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+                    <div class="mdl-grid mdl-grid--no-spacing">
+                        <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                            <img class="banner" src="3.jpg" alt="" />
+                            <div class="banner-title">
+                                <h2 class="banner-title-h2">My Tree</h2>
+                                <div class="banner-title-cut-line">
+                                </div>
+                                <h5 class="banner-title-h5">
+                                    你的时间，成就你
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                            <div class="Tree-card mdl-card">
+                                <div class="mdl-card__title">
+                                    <p>您已使用</p>
+                                    <h2 class="mdl-card__title-text">105小时</h2>
+                                </div>
+                                <div class="mdl-card__menu">
+                                    <button id="share-menu-2" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <img src="svg/ic_share_24px.svg">
+                                </button>
+                                    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="share-menu-2">
+                                        <li class="mdl-menu__item">
+                                            分享到QQ空间
+                                        </li>
+                                        <li class="mdl-menu__item">
+                                            分享至QQ好友
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    <div class="Tree-usage-log-zone">
+                                        <div class='Tree-usage-log-slice'>
+                                            <div class="Tree-usage-log-icon-box">
+                                                <samp class="Tree-usage-log-icon"></samp>
+                                            </div>
+                                            <samp class='Tree-usage-log'>2016.8.9<br/>Tree 第一次开启</samp>
+                                        </div>
+                                        <div class='Tree-usage-log-slice'>
+                                            <img class='Tree-usage-log-slice-occupay' src="svg/ic_more_vert_48px.svg">
+                                        </div>
+                                        <div class='Tree-usage-log-slice'>
+                                            <div class="Tree-usage-log-icon-box">
+                                                <samp class="Tree-usage-log-icon"></samp>
+                                            </div>
+                                            <samp class='Tree-usage-log'>2016.8.13<br/>完成第一个专注时段</samp>
+                                        </div>
+                                        <div class='Tree-usage-log-slice'>
+                                            <img class='Tree-usage-log-slice-occupay' src="svg/ic_more_vert_48px.svg">
+                                        </div>
+                                        <div class='Tree-usage-log-slice'>
+                                            <div class="Tree-usage-log-icon-box">
+                                                <samp class="Tree-usage-log-icon"></samp>
+                                            </div>
+                                            <samp class='Tree-usage-log'>2016.9.26<br/>累计开灯59小时，您拯救了一棵树</samp>
+                                        </div>
+                                        <div class='Tree-usage-log-slice'>
+                                            <img class='Tree-usage-log-slice-occupay' src="svg/ic_more_vert_48px.svg">
+                                        </div>
+                                        <div class='Tree-usage-log-slice'>
+                                            <div class="Tree-usage-log-icon-box">
+                                                <samp class="Tree-usage-log-icon unfnished"></samp>
+                                            </div>
+                                            <samp class='Tree-usage-log unfnished'>来，继续创造...</samp>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mdl-layout__tab-panel" id="fixed-tab-4">
+                    <div class="mdl-grid mdl-grid--no-spacing">
+                        <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                            <img class="banner" src="4.jpg" alt="" />
+                            <div class="banner-title">
+                                <h2 class="banner-title-h2">常规设置</h2>
+                                <div class="banner-title-cut-line"></div>
+                                <h5 class="banner-title-h5">
+                                    你的灯，属于你
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+                            <h6 class="control-panel-title">色温/亮度</h6>
+                            <div class="control-panel-background">
+                                <ul class="mdl-list control-panel">
+                                    <li class="mdl-list__item--two-line mdl-list__item">
+                                        <div class="control-panel-icon-box">
+                                            <div class="control-panel-icon">
+                                                <img src="svg/dark.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="range-slider">
+                                            <input type="range" id="brightness" class="mdl-slider mdl-js-slider" step="0.1" min="5" max="99">
+                                        </div>
+                                        <div class="control-panel-icon-box">
+                                            <div class="control-panel-icon">
+                                                <img src="svg/light.svg" alt="" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mdl-list__item--two-line mdl-list__item">
+                                        <div class="control-panel-icon-box">
+                                            <div class="control-panel-icon">
+                                                <div class="cold">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="range-slider">
+                                            <input type="range" id="color-temperature" class="mdl-slider mdl-js-slider" step="0.1" min="1" max="99">
+                                        </div>
+                                        <div class="control-panel-icon-box">
+                                            <div class="control-panel-icon">
+                                                <div class="warm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h6 class="control-panel-title">预设选择</h6>
+                            <div class="control-panel-background">
+                                <ul class="mdl-list control-panel">
+                                    <li class="mdl-list__item--two-line mdl-list__item">
+                                        <span class="mdl-list__item-primary-content"><span>阅读预设</span>
+                                        <span class="mdl-list__item-sub-title">温和色温，适于阅读与写作</span>
+                                        </span>
+                                        <span class="mdl-list__item-secondary-action">
+                                    <label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
+                                        <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1" checked/>
+                                    </label>
+                                </span>
+                                    </li>
+                                    <li class="mdl-list__item--two-line mdl-list__item">
+                                        <span class="mdl-list__item-primary-content"><span>自然光预设</span>
+                                        <span class="mdl-list__item-sub-title">完美还原自然光，真彩视界</span>
+                                        </span>
+                                        <span class="mdl-list__item-secondary-action"><label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-2"><input type="radio" id="list-option-2" class="mdl-radio__button" name="options" value="2" /></label></span>
+                                    </li>
+                                    <li class="mdl-list__item--two-line mdl-list__item">
+                                        <span class="mdl-list__item-primary-content"><span>儿童预设</span>
+                                        <span class="mdl-list__item-sub-title">去蓝光、无频闪</span>
+                                        </span>
+                                        <span class="mdl-list__item-secondary-action"><label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-3"><input type="radio" id="list-option-3" class="mdl-radio__button" name="options" value="3" /></label></span>
+                                    </li>
+                                    <li class="mdl-list__item--two-line mdl-list__item">
+                                        <span class="mdl-list__item-primary-content"><span>不使用预设</span>
+                                        <span class="mdl-list__item-sub-title">自己设定色温与亮度</span>
+                                        </span>
+                                        <span class="mdl-list__item-secondary-action"><label class="list-radio mdl-radio mdl-js-radio mdl-js-ripple-effect" for="list-option-4"><input type="radio" id="list-option-4" class="mdl-radio__button" name="options" value="4" checked/></label></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <div class="bottomSwitch">
+                <div class="container">
+                    <button id="switch" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-shadow--4dp">
+            <img class = "switchIcon" src="svg/ic_power_settings_new_24px.svg">
+            </button>
+                </div>
+            </div>
+            <div class="mdl-layout__header navbar-fixed-bottom">
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                    <a href="#fixed-tab-1" class="mdl-layout__tab is-active">
+                       TAB1
+                    </a>
+                    <a href="#fixed-tab-2" class="mdl-layout__tab">
+                       TAB2
+                    </a>
+                    <a href="#fixed-tab-3" class="mdl-layout__tab">
+                       TAB3
+                    </a>
+                    <a href="#fixed-tab-4" class="mdl-layout__tab">
+                       TAB4
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="client/js/jquery.min.js"></script>
+        <script src="client/mdl/material.min.js"></script>
+        <script src="client/js/myscript.js"></script>
+        <script src="client/js/time-picker.min.js"></script>
+    </body>
+
+</html>
